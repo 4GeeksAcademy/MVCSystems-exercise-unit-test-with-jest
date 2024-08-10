@@ -20,7 +20,7 @@ let oneYenIs = {
 }
 
 
-test("One euro should be 1.07 dollars", function() {
+test("One euro equivale a 1.07 dolares", function() {
     // Importo la funcion desde app.js
     const { fromEuroToDollar } = require('./app.js');
 
@@ -43,7 +43,7 @@ test("One dolar equivale a 146.67 yen", function() {
     const expected = 10 * 146.67;
 
     // Hago mi comparación (la prueba)
-    expect(fromDollarToYen(10)).toBeCloseTo(1466.7);
+    expect(fromDollarToYen(10)).toBeCloseTo(1466.7); // 1 dolar son 146.67 yenes, entonces 10 dolares deberían ser = (10 * 146.67)
 })
 
 
@@ -56,5 +56,5 @@ test("One yen equivale a 0.0054 pound", function() {
     const expected = 10 * 0.0054;
 
     // Hago mi comparación (la prueba)
-    expect(fromYenToPound(10)).toBeCloseTo(0.054);
+    expect(fromYenToPound(10)).toBeCloseTo(0.054); // 1 yen son 0.0054 libras, entonces 10 yenes deberían ser = (10 * 0.0054)
 })
