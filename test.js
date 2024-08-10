@@ -43,7 +43,7 @@ test("One dolar equivale a 146.67 yen", function() {
     const expected = 10 * 146.67;
 
     // Hago mi comparación (la prueba)
-    expect(fromDollarToYen(10)).toBeCloseTo(1466.67);
+    expect(fromDollarToYen(10)).toBeCloseTo(1466.7);
 })
 
 
